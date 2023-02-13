@@ -1,0 +1,107 @@
+.body {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1080px;
+  font-family: 'UniSans-heavy';
+  background: url('../assets/img/background.jpg') no-repeat center center / cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 29px 0 24px 0;
+}
+
+.header__description {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+}
+
+.header__text {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 5px;
+}
+
+.header__title-bg {
+  width: 496px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: var(--pink);
+  transform: skewX(352deg);
+}
+
+.header__title {
+  font-size: 40px;
+  line-height: 48px;
+  transform: skewX(9deg);
+}
+
+.spinner {
+  position: relative;
+}
+
+.spinner__container {
+  width: 835px;
+  height: 835px;
+  position: relative;
+  margin: 0 auto;
+  background: url('../assets/img/wheel-bg.png') no-repeat center center / contain; 
+}
+
+.spinner__wheel {
+  width: 642px;
+  height: 642px;
+  position: absolute;
+  top: 66px;
+  left: 94px;
+  background: url('../assets/img/wheel.png') no-repeat center center / contain;
+}
+
+@keyframes spin {
+  from {transform: rotate(360deg);}
+  to {transform: rotate(0deg);}
+}
+
+.spinner__cell {
+  width: 260px;
+  height: 350px;
+  position: absolute;
+  top: 68px;
+  left: 286px;
+  background: url('../assets/img/cell.png') no-repeat center center / contain;
+}
+
+.spinner__button {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 317px;
+  left: 345px;
+  background: url('../assets/img/button.png') no-repeat center center / contain;
+  border-radius: 100%;
+}
+
+.spinner__image-woman {
+  width: 838px;
+  height: 794px;
+  position: absolute;
+  top: 81px;
+  left: 88px;
+  background: url('../assets/img/woman.png') no-repeat center center / contain;
+}
