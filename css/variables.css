@@ -1,4 +1,10 @@
 :root {
   --white: #FFFFFF;
   --pink: #C6217D;
+  --black-bg: rgba(0, 0, 0, 0.6);
+  --gold: #FFD953;
+  --gold-gradient: linear-gradient(180deg, #FEED7C 0%, #FFC54B 100%);
+  --gold-gradient-active: linear-gradient(180deg, #eede74 0%, #e7b344 100%);
+  --gold-light: #FFEA83;
+  --gray-night: #313131;
 }
