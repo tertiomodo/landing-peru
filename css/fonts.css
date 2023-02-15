@@ -3,7 +3,7 @@
   src: local('Uni Sans HeavyItalic'),
        url('../assets/fonts/UniSans-HeavyItalic.otf');
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 

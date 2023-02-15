@@ -1,0 +1,245 @@
+@media (max-width: 1560px) {
+  .spinner__container {
+    width: 635px;
+    height: 635px;
+  }
+  
+  .spinner__wheel {
+    width: 488px;
+    height: 488px;
+    top: 53px;
+    left: 67px;
+  }
+  
+  .spinner__cell {
+    width: 200px;
+    height: 310px;
+    top: 30px;
+    left: 213px;
+  }
+  
+  .spinner__button {
+    width: 120px;
+    height: 120px;
+    top: 237px;
+    left: 252px;
+  }
+
+  .background__woman {
+    left: 7px;
+    width: 715px;
+    height: 671px;
+  }
+
+  .background__orange-ball {
+    left: 50px;
+  }
+
+  .background__purple-big-ball {
+    bottom: 0;
+  }
+
+  .background__green-ball {
+    bottom: 410px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .background__woman {
+    width: 600px;
+    height: 556px;
+  }
+
+  .background__purple-big-ball {
+    bottom: -115px;
+  }
+
+  .background__green-ball {
+    bottom: 410px;
+    right: -25px;
+  }
+
+  .background__purple-small-ball {
+    top: 0;
+    left: -66px;
+  }
+
+  .background__red-small-ball {
+    top: 214px;
+    right: -4px;
+  }
+
+  .background__red-big-ball {
+    top: 11px;
+    right: 70px;
+  }
+
+  .background__orange-ball {
+    bottom: 728px;
+    left: -11px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header__text {
+    font-size: 24px;
+  }
+
+  .header__title-bg {
+    width: 373px;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+
+  .spinner__container {
+    width: 510px;
+    height: 510px;
+  }
+  
+  .spinner__wheel {
+    width: 404px;
+    height: 404px;
+    top: 35px;
+    left: 49px;
+  }
+  
+  .spinner__cell {
+    width: 154px;
+    height: 264px;
+    top: 6px;
+    left: 175px;
+  }
+  
+  .spinner__button {
+    width: 100px;
+    height: 100px;
+    top: 187px;
+    left: 202px;
+  }
+
+  .background__purple-big-ball {
+    width: 250px;
+    height: 295px;
+  }
+}
+
+@media (max-width: 520px) {
+  .body,
+  .background {
+    min-height: 770px;
+  }
+
+  .header__description {
+    letter-spacing: 0.07em;
+  }
+
+  .header__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 6px;
+  }
+
+  .header__title-bg {
+    width: 334px;
+    height: 40px;
+  }
+
+  .header__title {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .spinner {
+    overflow: hidden;
+  }
+
+  .spinner__container {
+    width: 402px;
+    height: 402px;
+    top: 2px;
+    left: -10px;
+  }
+
+  .spinner__wheel {
+    width: 309px;
+    height: 309px;
+    top: 32px;
+    left: 45px;
+  }
+  
+  .spinner__cell {
+    width: 125px;
+    height: 168px;
+    top: 33px;
+    left: 138px;
+  }
+  
+  .spinner__button {
+    width: 67px;
+    height: 67px;
+    top: 153px;
+    left: 166px;
+  }
+
+  .background__woman {
+    width: 410px;
+    height: 394px;
+    bottom: -41px;
+    left: -10px;
+  }
+
+  .background__purple-big-ball {
+    width: 190px;
+    height: 187px;
+    bottom: -63px;
+    right: -70px;
+  }
+
+  .background__purple-small-ball {
+    width: 94px;
+    height: 89px;
+    top: -7px;
+    left: -42px;
+  }
+
+  .background__orange-ball {
+    width: 50px;
+    height: 50px;
+    bottom: 509px;
+    left: -10px;
+  }
+
+  .background__green-ball {
+    width: 58px;
+    height: 58px;
+    bottom: 286px;
+    right: -21px;
+  }
+
+  .background__red-small-ball {
+    width: 39px;
+    height: 39px;
+    top: 182px;
+    right: -8px;
+  }
+
+  .background__red-big-ball {
+    width: 52px;
+    height: 52px;
+    top: 20px;
+    right: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .body {
+    background: url('../assets/img/mobile-bg.jpg') no-repeat center center / cover;
+  }
+
+  .body,
+  .background {
+    max-width: 375px;
+  }
+}
