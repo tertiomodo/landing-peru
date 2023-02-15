@@ -1,0 +1,41 @@
+.spinner__container {
+  width: 835px;
+  height: 835px;
+  position: relative;
+  margin: 0 auto;
+  background: url('../../assets/img/wheel-bg.png') no-repeat center center / contain; 
+}
+
+.spinner__wheel {
+  width: 642px;
+  height: 642px;
+  position: absolute;
+  top: 66px;
+  left: 94px;
+  background: url('../../assets/img/wheel.png') no-repeat center center / contain;
+}
+
+@keyframes spin {
+  from {transform: rotate(360deg);}
+  to {transform: rotate(0deg);}
+}
+
+.spinner__cell {
+  width: 260px;
+  height: 350px;
+  position: absolute;
+  top: 68px;
+  left: 286px;
+  background: url('../../assets/img/cell.png') no-repeat center center / contain;
+}
+
+.spinner__button {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 317px;
+  left: 345px;
+  z-index: 10;
+  background: url('../../assets/img/button.png') no-repeat center center / contain;
+  border-radius: 100%;
+}

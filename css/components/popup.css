@@ -1,0 +1,106 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1080px;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-bg);
+}
+
+.popup__img-win {
+  width: 651px;
+  height: 782px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  font-family: 'UniSans';
+  background: url('../../assets/img/popup-win.png') no-repeat center center / contain;
+}
+
+.popup__message {
+  position: absolute;
+  bottom: 103px;
+  text-align: center;
+}
+
+.popup__title {
+  max-width: 515px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0px 0px 10px var(--gold);
+}
+
+.popup__description {
+  max-width: 236px;
+  min-height: 76px;
+  display: inline-block;
+  font-family: 'UniSans-regular';
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--white);
+}
+
+.popup__btn {
+  position: absolute;
+  bottom: -6px;
+  padding: 29px 118px 25px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gray-night);
+  text-shadow: 0px 2px 0px var(--gold-light);
+  background: var(--gold-gradient);
+  border-radius: 40px;
+}
+
+.popup__btn:active {
+  background: var(--gold-gradient-active);
+}
+
+.popup__img-lose {
+  width: 631px;
+  height: 383px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 0;
+  font-family: 'UniSans';
+  background: url('../../assets/img/popup-lose.png') no-repeat center center / contain;
+}
+
+.lose-message {
+  bottom: 99px;
+  left: 25px;
+}
+
+.lose-title {
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.lose-btn {
+  padding: 29px 51px 24px;
+  bottom: -15px;
+  left: 105px;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+  z-index: -100;
+}

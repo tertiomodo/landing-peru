@@ -28,10 +28,9 @@
 }
 
 @font-face {
-  font-family: 'UniSans';
+  font-family: 'UniSans-regular';
   src: local('Uni Sans Regular'),
-       url('../assets/fonts/UniSans-Regular.woff2') format('woff2'),
-       url('../assets/fonts/UniSans-Regular.woff') format('woff');
+       url('../assets/fonts/UniSans-regular.ttf');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

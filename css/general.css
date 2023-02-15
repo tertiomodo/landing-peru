@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1080px;
+  height: 100vh;
+  font-family: 'UniSans-heavy';
+  background: url('../assets/img/background.jpg') no-repeat center center / cover;
+}

@@ -1,0 +1,91 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 1080px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background__woman {
+  width: 838px;
+  height: 794px;
+  position: absolute;
+  bottom: 0;
+  left: 88px;
+  background: url('../../assets/img/woman.png') no-repeat center center / contain;
+}
+
+.background__purple-small-ball {
+  width: 180px;
+  height: 171px;
+  position: absolute;
+  top: 58px;
+  left: 196px;
+  background: url('../../assets/img/purple-small-ball.png') no-repeat center center / contain;
+}
+
+.background__purple-big-ball {
+  width: 313px;
+  height: 358px;
+  position: absolute;
+  bottom: 141px;
+  right: 0;
+  background: url('../../assets/img/purple-big-ball.png') no-repeat center center / contain;
+}
+
+.background__orange-ball {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  bottom: 418px;
+  left: 131px;
+  background: url('../../assets/img/orange-ball.png') no-repeat center center / contain;
+}
+
+.background__green-ball {
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  bottom: 540px;
+  right: 341px;
+  background: url('../../assets/img/green-ball.png') no-repeat center center / contain;
+}
+
+.background__red-big-ball {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 227px;
+  right: 365px;
+  background: url('../../assets/img/red-big-ball.png') no-repeat center center / contain;
+}
+
+.background__red-small-ball {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 310px;
+  right: 187px;
+  background: url('../../assets/img/red-small-ball.png') no-repeat center center / contain;
+}
+
+.background__transparent {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -20;
+}
+
+.transparent-active {
+  display: block;
+  visibility: visible;
+  z-index: 20;
+}
