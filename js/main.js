@@ -3,53 +3,43 @@ const button = document.querySelector('.spinner__button');
 
 button.addEventListener('click', () => {
 
+  // Is spinning animation by CSS
   spinner.style.animation = 'spin 0.5s linear infinite';
+  button.style.animation = 'spin 0.5s linear infinite';
 
-  let secound = 1;
+  let sec = 1;
   const interval = setInterval(() => {
+    spinner.style.animation = `spin ${sec}s linear infinite`;
+    button.style.animation = `spin ${sec}s linear infinite`;
 
-    spinner.style.animation = `spin ${secound}s linear infinite`;
-
-    if (secound === 2) {
+    if (sec === 2) {
       spinner.style.animation = '';
+      button.style.animation = '';
       clearInterval(interval);
-      randomNum();
-      console.log('interval is cleaning');
+      createRandomDegree();
     }
-    console.log(secound);
-    secound += 0.5;
+
+    sec += 0.5;
   }, 3000);
 
-  function randomNum() {
-    let degree = Math.round(Math.random() * 360);
-    switch(degree) {
-      case 0:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 45:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 90:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 135:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 180:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 226:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 270:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      case 315:
-        spinner.style.transform = `rotate(${degree}deg)`;
-        break;
-      default:
-        randomNum();
-    }
+  // Is finishing spin animation by JS
+  function createRandomDegree() {
+    let startDegree = 360;
+    const degreesArray = [0, 45, 90, 135, 180, 226, 270, 315];
+    const randomDegree = Math.floor(Math.random() * degreesArray.length);
+
+    const interv = setInterval(() => {
+      spinner.style.transform = `rotate(${startDegree}deg)`;
+      button.style.transform = `rotate(${startDegree}deg)`;
+      
+      if (startDegree === degreesArray[randomDegree]) {
+        spinner.style.transform = `rotate(${degreesArray[randomDegree]}deg)`;
+        clearInterval(interv);
+        return;
+      }
+
+      startDegree--;
+    }, 1);
   }
   
-})
+});
